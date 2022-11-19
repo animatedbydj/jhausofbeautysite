@@ -1,0 +1,126 @@
+body {
+  background-color: #fff1f1;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.header {
+  padding: 2rem 0;
+}
+
+.footer {
+  width: 100%;
+  min-height: 10vh;
+  margin-top: 5 rem;
+}
+
+.container {
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+.logo {
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.hero {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.book-button {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.book-button a {
+  width: 75px;
+  margin: 0 auto;
+  display: block;
+}
+
+.booksy-business-link {
+  width: 75px !important;
+  margin: 0 auto;
+  display: block;
+}
+
+.booksy-widget-container-default .booksy-widget-button {
+  width: 75px;
+  background: url("/img/bookbutton.png") no-repeat center center !important;
+}
+
+.booksy-widget-container-dialog .booksy-business-link {
+  display: none !important;
+}
+
+.booksy-widget-container-dialog .booksy-widget-button {
+  height: 180px !important;
+  margin-bottom: 2rem;
+}
+
+.booksy-widget-container-dialog {
+  width: 75px;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,115 @@
+* {
+	//outline: 1px solid purple;
+}
+
+body {
+	background-color: #fff1f1;
+	//background-image: url("/img/bgimg.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: 'Playfair Display', serif;
+}
+
+.header {
+	padding: 2rem 0;
+}
+
+.footer {
+	width: 100%;
+	min-height: 10vh;
+	margin-top: 5 rem;
+
+}
+
+.container {
+	max-width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+nav {
+	ul {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		li {
+			margin: 0 1rem;
+		}
+	}
+}
+
+.logo {
+	width: 400px;
+	margin: 0 auto;
+	display: block;
+	//-webkit-animation: fadein 2s ease-in alternate infinite;
+	//-moz-animation: fadein 2s ease-in alternate infinite;
+	//animation: fadein 2s ease-in alternate infinite;
+}
+
+.hero {
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+main {
+	min-height: 80vh;
+}
+
+.book-button {
+	margin-top: 2rem;
+	display: flex;
+
+	a {
+		width: 75px;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+.booksy-business-link {
+	width: 75px !important;
+	margin: 0 auto;
+	display: block;
+}
+
+.booksy-widget-container-default .booksy-widget-button {
+	width: 75px;
+	background: url("/img/bookbutton.png") no-repeat center center !important;
+}
+
+.booksy-widget-container-dialog .booksy-business-link {
+	display: none !important;
+
+}
+
+
+
+.booksy-widget-container-dialog .booksy-widget-button {
+	height: 180px !important;
+	margin-bottom: 2rem;
+
+}
+
+
+.booksy-widget-container-dialog {
+	width: 75px;
+	margin: 0 auto;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
