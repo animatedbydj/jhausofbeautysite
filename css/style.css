@@ -22,6 +22,10 @@ body {
   padding: 0 1rem;
 }
 
+nav {
+  width: 50%;
+}
+
 nav ul {
   list-style: none;
   display: -webkit-box;
@@ -40,7 +44,7 @@ nav ul li {
 }
 
 .logo {
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto;
   display: block;
 }
@@ -104,6 +108,34 @@ main {
 .booksy-widget-container-dialog {
   width: 75px;
   margin: 0 auto;
+}
+
+.contact-form {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  width: 100%;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.policies {
+  line-height: 1.8;
+}
+
+.policies br {
+  margin-bottom: 2rem;
 }
 
 @-webkit-keyframes fadein {

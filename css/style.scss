@@ -29,6 +29,9 @@ body {
 }
 
 nav {
+
+	width: 50%;
+
 	ul {
 		list-style: none;
 		display: flex;
@@ -42,7 +45,7 @@ nav {
 }
 
 .logo {
-	width: 400px;
+	max-width: 400px;
 	margin: 0 auto;
 	display: block;
 	//-webkit-animation: fadein 2s ease-in alternate infinite;
@@ -102,6 +105,34 @@ main {
 .booksy-widget-container-dialog {
 	width: 75px;
 	margin: 0 auto;
+}
+
+.contact-form {
+	width: 55%;
+	margin: 0 auto;
+
+	label {
+		width: 100%;
+		display: block;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+	}
+
+	button {
+		background-color: white;
+		border: 1px solid black;
+	}
+}
+
+.policies {
+	line-height: 1.8;
+
+	br {
+		margin-bottom: 2rem;
+	}
 }
 
 @keyframes fadein {
