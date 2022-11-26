@@ -138,6 +138,16 @@ main {
   margin-bottom: 2rem;
 }
 
+.booking-widget {
+  width: 650px;
+}
+
+@media screen and (max-width: 750px) {
+  .booking-widget {
+    width: 90%;
+  }
+}
+
 @-webkit-keyframes fadein {
   from {
     opacity: 0;

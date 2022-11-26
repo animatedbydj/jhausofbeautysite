@@ -135,6 +135,15 @@ main {
 	}
 }
 
+
+.booking-widget {
+	width: 650px;
+
+	@media screen and (max-width: 750px) {
+		width: 90%;
+	}
+}
+
 @keyframes fadein {
 	from {
 		opacity: 0;
