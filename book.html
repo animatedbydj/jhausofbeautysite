@@ -7,6 +7,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>book | jhausofbeauty.com</title>
 	<link rel="stylesheet" href="/css/style.css">
+	<script>
+		async function loadPoliciesContent() {
+			try {
+				const response = await fetch("/_data/policies.json");
+				const data = await response.json();
+
+				const policiesElement = document.querySelector('p.policies');
+				if (policiesElement) {
+					policiesElement.innerHTML = data.policies;
+				}
+			} catch (error) {
+				console.error("Error loading policies: ", error);
+			}
+		}
+		document.addEventListener("DOMContentLoaded", loadPoliciesContent);
+	</script>
 </head>
 
 <body>
