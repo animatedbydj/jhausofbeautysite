@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>book | jhausofbeauty.com</title>
 	<link rel="stylesheet" href="/css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<script>
 		async function loadPoliciesContent() {
 			try {
@@ -15,7 +16,7 @@
 
 				const policiesElement = document.querySelector('p.policies');
 				if (policiesElement) {
-					policiesElement.innerHTML = data.policies;
+					policiesElement.innerHTML = marked.parse(data.policies);
 				}
 			} catch (error) {
 				console.error("Error loading policies: ", error);
@@ -23,6 +24,7 @@
 		}
 		document.addEventListener("DOMContentLoaded", loadPoliciesContent);
 	</script>
+	<script src="/scripts/copyright.js"></script>
 </head>
 
 <body>
@@ -128,11 +130,9 @@
 	</main>
 	<footer class="footer">
 		<div class="container">
-			<p>©2024 by jhausofbeauty.com</p>
+			<p class="copyright">©2024 by jhausofbeauty.com</p>
 		</div>
 	</footer>
-
-
 </body>
 
 </html>
