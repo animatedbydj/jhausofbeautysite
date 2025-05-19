@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "img/uploads"
+public_folder: "img/uploads"
+
+collections:
+ - name: "content"
+   label: "Content"
+   files: 
+    - label: "Policies"
+      name: "policies"
+      file: "_data/policies.json"
+      format: "json"
+      fields: 
+        - {label: Policies, name: policies, widget: markdown} 
+        
